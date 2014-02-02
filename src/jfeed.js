@@ -60,6 +60,7 @@ JFeed.prototype = {
     title: '',
     link: '',
     description: '',
+    author: '',
     parse: function(xml) {
 
         if (jQuery.browser.msie) {

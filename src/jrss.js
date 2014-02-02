@@ -14,6 +14,7 @@ JRss.prototype  = {
         this.title = jQuery(channel).find('title:first').text();
         this.link = jQuery(channel).find('link:first').text();
         this.description = jQuery(channel).find('description:first').text();
+        this.author = jQuery(channel).find('author:first').text();
         this.language = jQuery(channel).find('language:first').text();
         this.updated = jQuery(channel).find('lastBuildDate:first').text();
     
@@ -28,6 +29,7 @@ JRss.prototype  = {
             item.title = jQuery(this).find('title').eq(0).text();
             item.link = jQuery(this).find('link').eq(0).text();
             item.description = jQuery(this).find('description').eq(0).text();
+            item.author = jQuery(this).find('author').eq(0).text();
             item.updated = jQuery(this).find('pubDate').eq(0).text();
             item.id = jQuery(this).find('guid').eq(0).text();
             
